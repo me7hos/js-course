@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Hello, world!</title>
+   <script type="text/javascript">
+   // ask the user for preferred greeting
+   var greeting = prompt( 'Please enter preferred greeting' );
+   // ask the user for his/her first name
+   var firstName = prompt( 'Please enter your first name' );
+   // ask the user for his/her surname
+   var surname = prompt( 'Please enter your surname' );
+   var salute  = 'Hello, ' + greeting + ' ' + firstName + ' ' + surname + '!';
+   // say personalized hello
+   alert( salute );
+   // change browser title line
+   document.documentElement.firstChild.firstChild.nextSibling.innerHTML = salute;
+   </script>
+</head>
+<body>
+
+</body>
+</html>

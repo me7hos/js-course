@@ -10,11 +10,12 @@ var shoppingCartItems = shoppingCart.length; // How many products are added in t
 for ( var i=0; i<shoppingCartItems; i++ ) { 
 
    var productLength = shoppingCart[i].product.length;
-   var productPrice = shoppingCart[i].price.toString();
+   var fixedPrice = shoppingCart[i].price.toFixed(2);
+   var productPrice = fixedPrice.toString();
    var priceLength = productPrice.length;
 
    var spacer = emptyLine - priceLength - productLength; // Calculate the needed amount of blank spaces to align the price
  
-   document.write( shoppingCart[i].product, new Array( spacer ).join('&nbsp;'), shoppingCart[i].price, '<br />' );
+   document.write( shoppingCart[i].product, new Array( spacer ).join('&nbsp;'), productPrice, '<br />' );
 
 };
